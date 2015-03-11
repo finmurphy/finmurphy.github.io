@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+		<title>dohub</title>
+		<link href="styles/dohub.css" rel="stylesheet" type="text/css" />
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    
+    <!--[if lt IE 9]><script src="scripts/html5.js"></script><![endif]-->
+    
+    <link href="styles/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.bxslider.min.js"></script>
+    
+    <script>
+    	$(document).ready(function(){
+				$('.slider').bxSlider({
+					slideWidth: 999,
+					maxSlides: 3,
+					auto: true
+				});
+			});
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(51.461211, -0.136152),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+  
+<body>
+	
+  <div class="wripper">
+	  
+    <!-- HEADER -->
+    <header>
+    	<article class="container">
+      	<h1 class="logo">
+        	<a href="index.html" title="dohub">dohub</a>
+        </h1>
+        <aside class="rightCol">
+        	<!--<a href="http://dohub.co.uk/login" class="greenBt" title="Login">Login</a>-->
+          <nav>
+          	<ul>
+            	<!--<li><a href="tour.html" title="Tour">Tour</a></li>
+              	<li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>-->
+              	<!--<li><a href="resources.html" title="Resources">Resources</a></li>-->
+                <!--<li><a href="blog.html" title="Blog">Blog</a></li>-->
+            </ul>
+          </nav>
+        </aside>
+      </article>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-39408694-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </header>    
+    <!-- /HEADER -->
+    
+    <!-- BANNER -->
+    <section class="banner">
+    <img src="images/banner-enterprises.jpg" alt="Home Page Banner" />
+      <div class="mapContainer">
+      	<div id="map_canvas">
+        </div>
+      </div>
+    </section>
+    <!-- /BANNER -->
+    
+    <!-- CONTENT AREA -->
+    <section class="contentArea">
+      
+      <article class="two-col-full border-bottom">
+      	<div class="container">
+      		<aside class="col-small">
+          	<h3>Contact Dohub.</h3>
+            <ul>
+            	<li>
+	             	<div class="img"><img src="images/members.png" /></div>
+                <span>Email: info@dohub.co.uk</span>
+              </li>
+              <li>
+	             	<div class="img"><img src="images/control.png" /></div>
+                <span>Phone: +44 (0)2074984249</span>
+              </li>
+              <li>
+	             	<div class="img"><img src="images/communication.png" /></div>
+                <span>13a Clapham Park Rd<br/>
+                	London<br/>
+                    SW4 7EE<br/>
+                    United Kingdom</span>
+              </li>
+            </ul>
+          </aside>    
+        	<aside class="col-large">
+         		<img src="images/img2.png" class="margin-left-120" />
+          	</aside>      
+        </div>
+      </article>
+      
+    </section>
+    <!-- /CONTENT AREA -->
+
+      <!-- FOOTER -->
+      <footer>
+          <article>
+              <div class="container">
+                  <ul>
+                      <li><h6>Support</h6></li>
+                      <!--<li><a href="#" title="Help">Help</a></li>
+                      <li><a href="#" title="T.O.S">T.O.S</a></li> -->
+                      <li><a href="contact.html" title="Contact">Contact</a></li>
+                  </ul>
+                  <ul class="social">
+                      <li><h6>Social</h6></li>
+                      <li><a href="https://www.facebook.com/dohubforbusiness" class="facebook" title="Facebook">Facebook</a></li>
+                      <li><a href="https://twitter.com/dohub" class="twitter" title="Twitter">Twitter</a></li>
+                  </ul>
+              </div>
+              <div class="copyRight">
+                  <div class="container">
+                      Copyright <span class="orangeClr">Dohub</span> 2014 All Rights Reserved
+                  </div>
+              </div>
+          </article>
+      </footer>
+      <!-- /FOOTER -->
+    
+  </div>
+
+</body>
+</html>

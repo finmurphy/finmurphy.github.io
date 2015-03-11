@@ -247,11 +247,12 @@ nav ul li a:hover, nav ul li.current a {
 	height:470px;
 }
 .banner .contentContainer span {
-	background:url(../images/black-bg.png) repeat center center;
+
 	padding:0 5px;
-	font-size:45px;
+	font-size:55px;
 	display:inline-table;
 	margin:0 0 3px;
+    font-family: 'open_sansbold';
 }
 .banner .contentContainer p {
 	display:inline-table;

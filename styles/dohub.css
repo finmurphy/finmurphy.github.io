@@ -246,10 +246,19 @@ nav ul li a:hover, nav ul li.current a {
 	width:100%px;
 	height:470px;
 }
+
+.banner .contentContainer .inner-bottom {
+    background:url(../images/black-bg.png) repeat center center;
+}
+
+.banner .contentContainer .p-small {
+    font-size:15px;
+}
+
 .banner .contentContainer span {
 
 	padding:0 5px;
-	font-size:55px;
+	font-size:65px;
 	display:inline-table;
 	margin:0 0 3px;
     font-family: 'open_sansbold';
@@ -259,13 +268,13 @@ nav ul li a:hover, nav ul li.current a {
 	width:100%;
 	font-size:20px;
 	padding:10px;
-	background:url(../images/black-bg.png) repeat center center;
+	/*background:url(../images/black-bg.png) repeat center center;*/
 	margin:22px 0 0;
 	font-family: 'open_sanslight';
 }
 .banner .contentContainer form {
 	margin:58px auto 0;
-	width:558px;
+	width:1000px;
 	display:table;
 }
 .banner input[type="text"] {
@@ -275,10 +284,10 @@ nav ul li a:hover, nav ul li.current a {
 	color:#c1c1c1;
 	font-family: 'open_sanslight';
 	font-size:20px;
-	width:402px;
+	width:290px;
 	padding:15px 28px;
 	float:left;
-	margin:auto;
+	margin: 0px 5px;
 }
 .banner input[type="submit"] {
 	background:#f26c42;
@@ -289,7 +298,8 @@ nav ul li a:hover, nav ul li.current a {
 	color:#fff;
 	text-shadow:none;
 	border:0;
-	float:right;
+	float:left;
+    margin: 0px 5px;
 	box-shadow:0px 1px 1px #8a2404;
 	padding: 15px 25px;
 }
